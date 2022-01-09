@@ -1,5 +1,11 @@
 
 
+----------seperate------------
+
+--[[
+	Cerberus admin
+]]
+
 local game = game
 local GetService = game.GetService
 if (not game.IsLoaded(game)) then
@@ -2898,11 +2904,6 @@ AddCommand("unloopkill", {"unlkill"}, "unloopkills a user", {3,"1"}, function(Ca
 end)
 
 AddCommand("loadc", {"loadc"}, "Loads Cerberus", {}, function()
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local AdminPanel = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Menu = Instance.new("Frame")
@@ -8564,7 +8565,6 @@ local function PHTPQ_fake_script() -- AdminPanel.LocalScript
 	AdminPanel.Parent = game.CoreGui
 end
 coroutine.wrap(PHTPQ_fake_script)()
-
 
 end)
 
