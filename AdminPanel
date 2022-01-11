@@ -1432,7 +1432,7 @@ end
 local LoadTheme;
 do
 	local Config = GetConfig();
-	CommandBarPrefix = Enum.KeyCode.BackSlash--isfolder and (Config.CommandBarPrefix and Enum.KeyCode[Config.CommandBarPrefix] or Enum.KeyCode.BackSlash) or Enum.KeyCode.BackSlash
+	CommandBarPrefix = Enum.KeyCode.Semicolon--isfolder and (Config.CommandBarPrefix and Enum.KeyCode[Config.CommandBarPrefix] or Enum.KeyCode.BackSlash) or Enum.KeyCode.BackSlash
 
 	local Theme = GetThemeConfig();
 	LoadTheme = function(Theme)
@@ -14161,7 +14161,7 @@ local userInputService = game:GetService("UserInputService")
 userInputService.InputBegan:Connect(function(input, gameProcessedEvent)
 	if input.UserInputType == Enum.UserInputType.Keyboard then
 
-		if input.KeyCode == Enum.KeyCode.BackSlash then
+		if input.KeyCode == Enum.KeyCode.Semicolon then
 			CommandBar.Input.Text = " "
 			wait(0.001)
 			CommandBar.Input.Text = " "
