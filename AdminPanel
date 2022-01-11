@@ -1432,7 +1432,7 @@ end
 local LoadTheme;
 do
 	local Config = GetConfig();
-	CommandBarPrefix = Enum.KeyCode.Semicolon--isfolder and (Config.CommandBarPrefix and Enum.KeyCode[Config.CommandBarPrefix] or Enum.KeyCode.BackSlash) or Enum.KeyCode.BackSlash
+	CommandBarPrefix = Enum.KeyCode.P--isfolder and (Config.CommandBarPrefix and Enum.KeyCode[Config.CommandBarPrefix] or Enum.KeyCode.BackSlash) or Enum.KeyCode.BackSlash
 
 	local Theme = GetThemeConfig();
 	LoadTheme = function(Theme)
@@ -3233,7 +3233,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.0112185059, 0, -0.000702613965, 0)
 TextLabel_2.Size = UDim2.new(0, 242, 0, 27)
 TextLabel_2.Font = Enum.Font.GothamBlack
-TextLabel_2.Text = "Warning these commands may lag, to prevent this we have a keysystem please press \\ and enter."
+TextLabel_2.Text = "Warning these commands may lag, to prevent this we have a keysystem please press p and enter."
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 12.000
@@ -3245,7 +3245,7 @@ TextLabel_3.BorderSizePixel = 0
 TextLabel_3.Position = UDim2.new(0.011218505, 0, 0.348134577, 0)
 TextLabel_3.Size = UDim2.new(0, 242, 0, 27)
 TextLabel_3.Font = Enum.Font.GothamBlack
-TextLabel_3.Text = "Please press \\ and enter - Don't hold down on the keys"
+TextLabel_3.Text = "Please press p and enter - Don't hold down on the keys"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextSize = 12.000
 TextLabel_3.TextWrapped = true
@@ -3656,7 +3656,7 @@ TextLabel_7.BorderSizePixel = 0
 TextLabel_7.Position = UDim2.new(0.0112185059, 0, -0.000702613965, 0)
 TextLabel_7.Size = UDim2.new(0, 242, 0, 27)
 TextLabel_7.Font = Enum.Font.GothamBlack
-TextLabel_7.Text = "Warning these commands may lag, to prevent this we have a keysystem please press \\ and enter."
+TextLabel_7.Text = "Warning these commands may lag, to prevent this we have a keysystem please press p and enter."
 TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 12.000
@@ -3668,7 +3668,7 @@ TextLabel_8.BorderSizePixel = 0
 TextLabel_8.Position = UDim2.new(0.011218505, 0, 0.348134577, 0)
 TextLabel_8.Size = UDim2.new(0, 242, 0, 27)
 TextLabel_8.Font = Enum.Font.GothamBlack
-TextLabel_8.Text = "Please press \\ and enter - Don't hold down on the keys"
+TextLabel_8.Text = "Please press p and enter - Don't hold down on the keys"
 TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_8.TextSize = 12.000
 TextLabel_8.TextWrapped = true
@@ -3872,7 +3872,7 @@ TextLabel_14.BorderSizePixel = 0
 TextLabel_14.Position = UDim2.new(0.0112185059, 0, -0.000702613965, 0)
 TextLabel_14.Size = UDim2.new(0, 242, 0, 27)
 TextLabel_14.Font = Enum.Font.GothamBlack
-TextLabel_14.Text = "Warning these commands may lag, to prevent this we have a keysystem please press \\ and enter."
+TextLabel_14.Text = "Warning these commands may lag, to prevent this we have a keysystem please press p and enter."
 TextLabel_14.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_14.TextScaled = true
 TextLabel_14.TextSize = 12.000
@@ -3884,7 +3884,7 @@ TextLabel_15.BorderSizePixel = 0
 TextLabel_15.Position = UDim2.new(0.011218505, 0, 0.348134577, 0)
 TextLabel_15.Size = UDim2.new(0, 242, 0, 27)
 TextLabel_15.Font = Enum.Font.GothamBlack
-TextLabel_15.Text = "Please press \\ and enter - Don't hold down on the keys"
+TextLabel_15.Text = "Please press p and enter - Don't hold down on the keys"
 TextLabel_15.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_15.TextSize = 12.000
 TextLabel_15.TextWrapped = true
@@ -4033,7 +4033,7 @@ RemWarning_3.BackgroundTransparency = 1.000
 RemWarning_3.Position = UDim2.new(0.0497925319, 0, 0.700462997, 0)
 RemWarning_3.Size = UDim2.new(0, 216, 0, 20)
 RemWarning_3.Font = Enum.Font.GothamBlack
-RemWarning_3.Text = "Press \\ and enter"
+RemWarning_3.Text = "Press p and enter"
 RemWarning_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 RemWarning_3.TextScaled = true
 RemWarning_3.TextSize = 14.000
@@ -14161,7 +14161,7 @@ local userInputService = game:GetService("UserInputService")
 userInputService.InputBegan:Connect(function(input, gameProcessedEvent)
 	if input.UserInputType == Enum.UserInputType.Keyboard then
 
-		if input.KeyCode == Enum.KeyCode.Semicolon then
+		if input.KeyCode == Enum.P.Semicolon then
 			CommandBar.Input.Text = " "
 			wait(0.001)
 			CommandBar.Input.Text = " "
